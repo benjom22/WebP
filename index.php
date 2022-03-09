@@ -1,8 +1,10 @@
-<php?
+<?php
+ require 'vendor/autoload.php';
 
-echo "ADS";
+ Flight::route('/', function(){
+   echo 'Hello world!';
+ });
 
+ Flight::start();
 
-
-
->
+?>
